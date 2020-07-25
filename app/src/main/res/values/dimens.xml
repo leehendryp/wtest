@@ -8,9 +8,9 @@
 
     <dimen name="touch_length">48dp</dimen>
 
-    <dimen name="padding_small">margin_small</dimen>
-    <dimen name="padding_default">margin_default</dimen>
-    <dimen name="card_corner_radius_default">margin_default</dimen>
+    <dimen name="padding_small">@dimen/margin_small</dimen>
+    <dimen name="padding_default">@dimen/margin_default</dimen>
+    <dimen name="card_corner_radius_default">@dimen/margin_default</dimen>
 
     <dimen name="line_default">1dp</dimen>
 </resources>
