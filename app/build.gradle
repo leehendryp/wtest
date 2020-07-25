@@ -5,7 +5,7 @@ apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "com.leehendryp.stoneandroidchallenge"
@@ -52,6 +52,7 @@ dependencies {
 
     // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$rootProject.kotlinVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.androidCoroutinesVersion"
 
     // Rx
     implementation "io.reactivex.rxjava3:rxkotlin:$rootProject.rxKotlinVersion"
@@ -63,6 +64,8 @@ dependencies {
     implementation "androidx.recyclerview:recyclerview:$rootProject.recyclerVersion"
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
     implementation "androidx.core:core-ktx:$rootProject.ktxVersion"
+    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.lifecycleVersion"
 
     // Jetpack Components
     kapt "androidx.room:room-compiler:$rootProject.roomVersion"
