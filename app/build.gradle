@@ -16,9 +16,6 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        dataBinding.enabled = true
-        viewBinding.enabled = true
-
         kapt {
             arguments {
                 arg("room.incremental", "true")
