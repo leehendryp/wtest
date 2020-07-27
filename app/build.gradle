@@ -8,7 +8,7 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.leehendryp.stoneandroidchallenge"
+        applicationId "com.leehendryp.wtest"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1
@@ -39,6 +39,11 @@ android {
         jvmTarget = rootProject.jvmTarget
     }
 
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+
     lintOptions {
         abortOnError false
     }
@@ -66,6 +71,7 @@ dependencies {
 
     // Jetpack Components
     kapt "androidx.room:room-compiler:$rootProject.roomVersion"
+    kapt "android.arch.persistence.room:compiler:$rootProject.roomVersion"
     implementation "androidx.room:room-ktx:$rootProject.roomVersion"
     implementation "androidx.room:room-runtime:$rootProject.roomVersion"
     implementation "androidx.room:room-rxjava2:$rootProject.roomVersion"
@@ -80,6 +86,7 @@ dependencies {
     implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
     implementation "com.github.akarnokd:rxjava3-retrofit-adapter:$rootProject.retrofitRxJava3AdapterVersion"
     implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitGsonVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okHttpLoggingVersion"
 
     // Dagger
     kapt "com.google.dagger:dagger-compiler:$rootProject.daggerVersion"

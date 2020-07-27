@@ -1,7 +1,8 @@
 package com.leehendryp.wtest.data.entities
 
+import com.google.gson.annotations.SerializedName
+
 data class PageResponse(
-    val count: Int?,
-    val articleResponseList:
-    List<ArticleResponse>?
+    @SerializedName("count") val count: Int?,
+    @SerializedName("items") val articleResponseList: List<ArticleResponse>?
 )

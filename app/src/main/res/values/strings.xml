@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">WTest</string>
+
+    <string name="error_title">Sorry, an error occurred</string>
+    <string name="error_retry">Please, try again.</string>
+    <string name="error_my_bad">Oops, that\'s embarrassing… My bad. If the issue persists, try updating the app. </string>
+    <string name="error_service_instability">It seems our servers are facing issues right now. Please, try again later.</string>
+    <string name="error_no_connection">Please, check your internet connection and try again.</string>
+    <string name="error_generic">%s</string>
+
 </resources>

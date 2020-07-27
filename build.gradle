@@ -30,6 +30,7 @@ buildscript {
         retrofitVersion = "2.6.0"
         retrofitRxJava3AdapterVersion = "3.0.0"
         retrofitGsonVersion = "2.4.0"
+        okHttpLoggingVersion = "4.8.0"
 
         daggerVersion = "2.26"
 

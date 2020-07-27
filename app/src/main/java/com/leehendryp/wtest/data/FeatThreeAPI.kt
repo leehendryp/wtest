@@ -1,6 +1,7 @@
 package com.leehendryp.wtest.data
 
 import com.leehendryp.wtest.data.entities.PageResponse
+import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
 
@@ -15,5 +16,5 @@ interface FeatThreeAPI {
     suspend fun getArticlesAt(
         @Query("page") page: Int,
         @Query("limit") limit: Int = MAX_ENTRIES
-    ): PageResponse
+    ): Response<PageResponse>
 }

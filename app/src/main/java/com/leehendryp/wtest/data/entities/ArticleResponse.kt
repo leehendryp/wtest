@@ -1,13 +1,15 @@
 package com.leehendryp.wtest.data.entities
 
+import com.google.gson.annotations.SerializedName
+
 data class ArticleResponse(
-    val author: String?,
-    val body: String?,
-    val hero: String?,
-    val id: String?,
-    val limit: String?,
-    val page: String?,
-    val publishedAt: String?,
-    val summary: String?,
-    val title: String?
+    @SerializedName("author") val author: String?,
+    @SerializedName("body") val body: String?,
+    @SerializedName("hero") val hero: String?,
+    @SerializedName("id") val id: String?,
+    @SerializedName("limit") val limit: String?,
+    @SerializedName("page") val page: String?,
+    @SerializedName("published-at") val publishedAt: String?,
+    @SerializedName("summary") val summary: String?,
+    @SerializedName("title") val title: String?
 )
